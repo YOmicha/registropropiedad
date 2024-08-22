@@ -4,38 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           background-color: #f4f4f4;
+        }
+        
+        header {
+           width: 100%;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           background-color: #111;
+           color: #fff;
+           padding: 20px 0;
+        }
+        
+        .hero {
+           width: 100%;
+           height: 500px;
+           background-color: #f4f4f4;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+        }
+        
+        .hero h1 {
+           font-size: 36px;
+           margin-bottom: 20px;
+        }
+        
+        .hero p {
+           font-size: 24px;
+           margin-bottom: 20px;
+        }
+        
+        .services {
+           width: 80%;
+           margin: 20px 0;
+        }
+        
+        .services h2 {
+           font-size: 36px;
+           margin-bottom: 20px;
+        }
+        
+        .services p {
+           font-size: 18px;
+           margin-bottom: 20px;
+        }
+        
+        .service-list {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+        }
+        
+        .service {
+           width: 30%;
+           margin-bottom: 20px;
+           padding: 20px;
+           background-color: #fff;
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service h3 {
+           font-size: 24px;
+           margin-bottom: 10px;
+        }
+        
+        .service p {
+           font-size: 14px;
+        }
+        
+        footer {
+           width: 100%;
+           background-color: #111;
+           color: #fff;
+           padding: 20px 0;
+           text-align: center;
+        }
+        
+        footer a {
+           color: #fff;
+           text-decoration: none;
+           margin: 0 10px;
+        }
+        </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <div class="hero">
+            <h1>Registro de la propiedad: asesoría técnica de propiedades</h1>
+            <p>A continuación pondremos reales y lujosos tamaños de las propiedades.</p>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#">La aplicación</a>
+            <a href="#">Registro de la propiedad</a>
+            <a href="#">Inscripción</a>
+            <a href="#">Consulta de certificados</a>
         </nav>
     </header>
-
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the homepage where you can find an introduction to the website.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>This section contains information about the purpose of the website and its creators.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out via email at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        <section class="services">
+            <h2>Servicios en línea</h2>
+            <p>Aquí solo se muestra un tamaño, pero en realidad podemos hacer que el tamaño cambie en función de la pantalla.</p>
+            <div class="service-list">
+                <div class="service">
+                    <h3>CERTIFICADOS</h3>
+                    <p>Obtener certificados de propiedad garantizada</p>
+                </div>
+                <div class="service">
+                    <h3>INSCRIPCIÓN</h3>
+                    <p>Obtener certificados de propiedad garantizada</p>
+                </div>
+                <div class="service">
+                    <h3>ACTUALIZACIÓN DE DATOS</h3>
+                    <p>Actualizar datos de propiedad</p>
+                </div>
+                <div class="service">
+                    <h3>CONSULTA DE CERTIFICADOS</h3>
+                    <p>Obtener certificados de propiedad garantizada</p>
+                </div>
+                <div class="service">
+                    <h3>CONSULTA DE TAMANOS</h3>
+                    <p>Obtener certificados de propiedad garantizada</p>
+                </div>
+                <div class="service">
+                    <h3>CONSULTA DE TAMANOS</h3>
+                    <p>Obtener certificados de propiedad garantizada</p>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <a href="#">REGISTRO DE LA PROPiedad</a>
+        <a href="#">CONSULTA DE TAMANOS</a>
     </footer>
-</body>
+ </body>
 </html>
