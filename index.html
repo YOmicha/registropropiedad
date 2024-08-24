@@ -1,153 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>Registro de la propiedad de Guayaquil</title>
     <style>
         body {
-           font-family: Arial, sans-serif;
-           margin: 0;
-           padding: 0;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
-        
         header {
-           width: 100%;
-           display: flex;
-           justify-content: space-around;
-           align-items: center;
-           background-color: #111;
-           color: #fff;
-           padding: 20px 0;
+            background-image: url('property-image.jpg');
+            background-size: cover;
+            color: white;
+            padding: 50px 20px;
+            position: relative;
         }
-        
-        .hero {
-           width: 100%;
-           height: 500px;
-           background-color: #f4f4f4;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-           text-align: center;
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
-        
-        .hero h1 {
-           font-size: 36px;
-           margin-bottom: 20px;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
         }
-        
-        .hero p {
-           font-size: 24px;
-           margin-bottom: 20px;
+        .header-content {
+            max-width: 600px;
         }
-        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .logos {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .logos img {
+            width: 100px;
+            margin-left: 10px;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transform: translateY(-50px);
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
         .services {
-           width: 80%;
-           margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-        
-        .services h2 {
-           font-size: 36px;
-           margin-bottom: 20px;
-        }
-        
-        .services p {
-           font-size: 18px;
-           margin-bottom: 20px;
-        }
-        
-        .service-list {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: space-between;
-        }
-        
         .service {
-           width: 30%;
-           margin-bottom: 20px;
-           padding: 20px;
-           background-color: #fff;
-           border-radius: 10px;
-           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            background-color: #e6f3f7;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
         }
-        
+        .service img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
         .service h3 {
-           font-size: 24px;
-           margin-bottom: 10px;
+            margin: 10px 0;
         }
-        
         .service p {
-           font-size: 14px;
+            font-size: 0.9em;
+            color: #666;
         }
-        
-        footer {
-           width: 100%;
-           background-color: #111;
-           color: #fff;
-           padding: 20px 0;
-           text-align: center;
-        }
-        
-        footer a {
-           color: #fff;
-           text-decoration: none;
-           margin: 0 10px;
-        }
-        </style>
+    </style>
 </head>
 <body>
     <header>
-        <div class="hero">
-            <h1>Registro de la propiedad: asesoría técnica de propiedades</h1>
-            <p>A continuación pondremos reales y lujosos tamaños de las propiedades.</p>
-        </div>
         <nav>
-            <a href="#">La aplicación</a>
-            <a href="#">Registro de la propiedad</a>
-            <a href="#">Inscripción</a>
-            <a href="#">Consulta de certificados</a>
+            <a href="#">La alcaldía</a>
+            <a href="#">registro de la propiedad</a>
+            <a href="#">municipio</a>
         </nav>
+        <div class="header-content">
+            <h1>Registro de la propiedad: asegura tu derecho de propiedad.</h1>
+        </div>
+        <div class="logos">
+            <img src="logo1.png" alt="Registro de la propiedad de Guayaquil">
+            <img src="logo2.png" alt="Alcaldía de Guayaquil">
+        </div>
     </header>
     <main>
-        <section class="services">
-            <h2>Servicios en línea</h2>
-            <p>Aquí solo se muestra un tamaño, pero en realidad podemos hacer que el tamaño cambie en función de la pantalla.</p>
-            <div class="service-list">
-                <div class="service">
-                    <h3>CERTIFICADOS</h3>
-                    <p>Obtener certificados de propiedad garantizada</p>
-                </div>
-                <div class="service">
-                    <h3>INSCRIPCIÓN</h3>
-                    <p>Obtener certificados de propiedad garantizada</p>
-                </div>
-                <div class="service">
-                    <h3>ACTUALIZACIÓN DE DATOS</h3>
-                    <p>Actualizar datos de propiedad</p>
-                </div>
-                <div class="service">
-                    <h3>CONSULTA DE CERTIFICADOS</h3>
-                    <p>Obtener certificados de propiedad garantizada</p>
-                </div>
-                <div class="service">
-                    <h3>CONSULTA DE TAMANOS</h3>
-                    <p>Obtener certificados de propiedad garantizada</p>
-                </div>
-                <div class="service">
-                    <h3>CONSULTA DE TAMANOS</h3>
-                    <p>Obtener certificados de propiedad garantizada</p>
-                </div>
+        <h2>Servicios en linea</h2>
+        <p>A continuación puedes realizar los siguientes trámites:</p>
+        <div class="services">
+            <div class="service">
+                <img src="icon1.png" alt="Certificados">
+                <h3>CERTIFICADOS</h3>
+                <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
             </div>
-        </section>
+            <div class="service">
+                <img src="icon2.png" alt="Inscripcion">
+                <h3>INSCRIPCION</h3>
+                <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+            </div>
+            <div class="service">
+                <img src="icon3.png" alt="Actualizacion de datos">
+                <h3>ACTUALIZACION DE DATOS</h3>
+                <p></p>
+            </div>
+            <div class="service">
+                <img src="icon4.png" alt="Consulta de tramites">
+                <h3>CONSULTA DE TRAMITES</h3>
+                <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+            </div>
+            <div class="service">
+                <img src="icon5.png" alt="Consulta de certificados">
+                <h3>CONSULTA DE CERTIFICADOS</h3>
+                <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+            </div>
+            <div class="service">
+                <img src="icon6.png" alt="Descargar facturas">
+                <h3>DESCARGAR FACTURAS</h3>
+                <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+            </div>
+        </div>
     </main>
-    <footer>
-        <a href="#">REGISTRO DE LA PROPiedad</a>
-        <a href="#">CONSULTA DE TAMANOS</a>
-    </footer>
- </body>
+</body>
 </html>
