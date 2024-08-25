@@ -51,7 +51,6 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
-            font-size: px;
         }
         .logos {
             position: absolute;
@@ -68,6 +67,13 @@
             margin-left: 10px;
         }
         main {
+            
+            background-image: url(./img/polygon.png);
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat, repeat;
+        }
+        .sub-main{
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -83,6 +89,7 @@
             padding: 30px;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 50px;
+            
         }
         .service {
             margin-bottom: 20px;
@@ -94,6 +101,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
+            background-color: #fff;
         }
         .service img {
             width: 80px;
@@ -215,17 +223,35 @@
         }
 
         @media (max-width: 700px) {
+            .header-content h1 {
+                font-size: 20px;
+            }
+            .header-content {
+                max-width: 300px;
+            }
+            .logos {
+                transform: scale(1.2);
+            }
+            .title {
+                font-size: 30px;
+            }
             .services {
                 display: grid;
                 /* flex-wrap: wrap; */
                 /* justify-content: space-between; */
                 padding: 30px;
-                grid-template-columns: 1fr;
                 gap: 10px;
                 
             }
             .input-group input{
                 width: 100px;
+            }
+        }
+
+        @media (max-width: 540) {
+            .services {
+                grid-template-columns: 1fr;
+                gap: 10px;
             }
         }
     </style>
@@ -246,57 +272,59 @@
         </div>
     </header>
     <main>
-        <h2 class="title">Servicios en linea</h2>
-        <p class="subtitle">A continuación puedes realizar los siguientes trámites:</p>
-        <div class="services">
-            <div class="service selected">
-                <div class="input-group">
-                    <label for="cedula-ruc">cédula/ruc</label>
-                    <div style="display: flex;">
-                        <input type="text" id="cedula-ruc" name="cedula-ruc" aria-label="Ingrese su cédula o RUC">
-                        <button type="button">crear</button>
+        <div class="sub-main">
+            <h2 class="title">Servicios en linea</h2>
+            <p class="subtitle">A continuación puedes realizar los siguientes trámites:</p>
+            <div class="services">
+                <div class="service selected">
+                    <div class="input-group">
+                        <label for="cedula-ruc">cédula/ruc</label>
+                        <div style="display: flex;">
+                            <input type="text" id="cedula-ruc" name="cedula-ruc" aria-label="Ingrese su cédula o RUC">
+                            <button type="button">crear</button>
+                        </div>
+                    </div>
+                    <img src="./img/cert.svg" alt="Certificados">
+                    <div class="container-desc">
+                        <h3>CERTIFICADOS</h3>
+                        <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
                     </div>
                 </div>
-                <img src="./img/cert.svg" alt="Certificados">
-                <div class="container-desc">
-                    <h3>CERTIFICADOS</h3>
-                    <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                <div class="service">
+                    <img src="./img/insc.svg" alt="Inscripcion">
+                    <div class="container-desc">
+                        <h3>INSCRIPCION</h3>
+                        <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                    </div>
                 </div>
-            </div>
-            <div class="service">
-                <img src="./img/insc.svg" alt="Inscripcion">
-                <div class="container-desc">
-                    <h3>INSCRIPCION</h3>
-                    <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                <div class="service">
+                    <img src="./img/actu.svg" alt="Actualizacion de datos">
+                    <div class="container-desc">
+                        <h3>ACTUALIZACION DE DATOS</h3>
+                        <p>Obtener certificados de propiedad garantiza 
+                        la legalidad y seguridad de tu inversión inmobiliaria</p>
+                    </div>
                 </div>
-            </div>
-            <div class="service">
-                <img src="./img/actu.svg" alt="Actualizacion de datos">
-                <div class="container-desc">
-                    <h3>ACTUALIZACION DE DATOS</h3>
-                    <p>Obtener certificados de propiedad garantiza 
-                    la legalidad y seguridad de tu inversión inmobiliaria</p>
+                <div class="service">
+                    <img src="./img/contram.svg" alt="Consulta de tramites">
+                    <div class="container-desc">
+                        <h3>CONSULTA DE TRAMITES</h3>
+                        <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                    </div>
                 </div>
-            </div>
-            <div class="service">
-                <img src="./img/contram.svg" alt="Consulta de tramites">
-                <div class="container-desc">
-                    <h3>CONSULTA DE TRAMITES</h3>
-                    <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                <div class="service">
+                    <img src="./img/concert.svg" alt="Consulta de certificados">
+                    <div class="container-desc">
+                        <h3>CONSULTA DE CERTIFICADOS</h3>
+                        <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                    </div>
                 </div>
-            </div>
-            <div class="service">
-                <img src="./img/concert.svg" alt="Consulta de certificados">
-                <div class="container-desc">
-                    <h3>CONSULTA DE CERTIFICADOS</h3>
-                    <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
-                </div>
-            </div>
-            <div class="service">
-                <img src="./img/descfact.svg" alt="Descargar facturas">
-                <div class="container-desc">
-                    <h3>DESCARGAR FACTURAS</h3>
-                    <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                <div class="service">
+                    <img src="./img/descfact.svg" alt="Descargar facturas">
+                    <div class="container-desc">
+                        <h3>DESCARGAR FACTURAS</h3>
+                        <p>Obtener certificados de propiedad garantiza la legalidad y seguridad de tu inversión inmobiliaria</p>
+                    </div>
                 </div>
             </div>
         </div>
